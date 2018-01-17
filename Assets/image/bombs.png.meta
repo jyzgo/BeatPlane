@@ -1,0 +1,627 @@
+fileFormatVersion: 2
+guid: 52302e5d557c4644285563b53e14cf68
+timeCreated: 1437895236
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: bombs_0
+    21300002: bombs_1
+    21300004: bombs_2
+    21300006: bombs_3
+    21300008: bombs_4
+    21300010: bombs_5
+    21300012: bombs_6
+    21300014: bombs_7
+    21300016: bombs_8
+    21300018: bombs_9
+    21300020: bombs_10
+    21300022: bombs_11
+    21300024: bombs_12
+    21300026: bombs_13
+    21300028: bombs_14
+    21300030: bombs_15
+    21300032: bombs_16
+    21300034: bombs_17
+    21300036: bombs_18
+    21300038: bombs_19
+    21300040: bombs_20
+    21300042: bombs_21
+    21300044: bombs_22
+    21300046: bombs_23
+    21300048: bombs_24
+    21300050: bombs_25
+    21300052: bombs_26
+    21300054: bombs_27
+    21300056: bombs_28
+    21300058: bombs_29
+    21300060: bombs_30
+    21300062: bombs_31
+    21300064: bombs_32
+    21300066: bombs_33
+    21300068: bombs_34
+    21300070: bombs_35
+    21300072: bombs_36
+    21300074: bombs_37
+    21300076: bombs_38
+    21300078: bombs_39
+    21300080: bombs_40
+    21300082: bombs_41
+    21300084: bombs_42
+    21300086: bombs_43
+    21300088: bombs_44
+    21300090: bombs_45
+    21300092: bombs_46
+    21300094: bombs_47
+    21300096: bombs_48
+    21300098: bombs_49
+    21300100: bombs_50
+    21300102: bombs_51
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: bombs_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 434
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 460
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_2
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 454
+        width: 53
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_3
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 422
+        width: 53
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_4
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 381
+        width: 56
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_5
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 406
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_6
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 390
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_7
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 408
+        width: 45
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_8
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 399
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_9
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 367
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_10
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 346
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_11
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 320
+        width: 42
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_12
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 341
+        width: 53
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_13
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 311
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_14
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 323
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_15
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 306
+        width: 56
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_16
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 316
+        width: 69
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_17
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 303
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_18
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 272
+        width: 41
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_19
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 286
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_20
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 248
+        width: 53
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_21
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 234
+        width: 56
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_22
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 206
+        width: 56
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_23
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 246
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_24
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 260
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_25
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 220
+        width: 41
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_26
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 228
+        width: 53
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_27
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 217
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_28
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 132
+        width: 40
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_29
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 172
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_30
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 185
+        width: 53
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_31
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 176
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_32
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 178
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_33
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 174
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_34
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 125
+        width: 53
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_35
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 106
+        width: 56
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_36
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 110
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_37
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 131
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_38
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 116
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_39
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 118
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_40
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 87
+        width: 31
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_41
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 46
+        width: 40
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_42
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 59
+        width: 49
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_43
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 62
+        width: 53
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_44
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 60
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_45
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 2
+        width: 56
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_46
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 2
+        width: 56
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_47
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 5
+        width: 20
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_48
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 2
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_49
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 2
+        width: 49
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_50
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 2
+        width: 53
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bombs_51
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 2
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

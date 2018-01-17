@@ -1,0 +1,583 @@
+fileFormatVersion: 2
+guid: 3fe93c7b378a7ae4696ef53c5b701886
+timeCreated: 1439713476
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: play_0
+    21300002: play_1
+    21300004: play_2
+    21300006: play_3
+    21300008: play_4
+    21300010: play_5
+    21300012: play_6
+    21300014: play_7
+    21300016: play_8
+    21300018: play_9
+    21300020: play_10
+    21300022: play_11
+    21300024: play_12
+    21300026: play_13
+    21300028: play_14
+    21300030: play_15
+    21300032: play_16
+    21300034: play_17
+    21300036: play_18
+    21300038: play_19
+    21300040: play_20
+    21300042: play_21
+    21300044: play_22
+    21300046: play_23
+    21300048: play_24
+    21300050: play_25
+    21300052: play_26
+    21300054: play_27
+    21300056: play_28
+    21300058: play_29
+    21300060: play_30
+    21300062: play_31
+    21300064: play_32
+    21300066: play_33
+    21300068: play_34
+    21300070: play_35
+    21300072: play_36
+    21300074: play_37
+    21300076: play_38
+    21300078: play_39
+    21300080: play_40
+    21300082: play_41
+    21300084: play_42
+    21300086: play_43
+    21300088: play_44
+    21300090: play_45
+    21300092: play_46
+    21300094: play_47
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: play_0
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 63
+        width: 48
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_1
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 63
+        width: 48
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_2
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 63
+        width: 48
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_3
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 63
+        width: 48
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_4
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 63
+        width: 48
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_5
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 63
+        width: 48
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_6
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 63
+        width: 48
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_7
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 63
+        width: 48
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_8
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 63
+        width: 48
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_9
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 63
+        width: 48
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_10
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 91
+        width: 321
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_11
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 68
+        width: 321
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_12
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 14
+        width: 72
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_13
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 27
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_14
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 27
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_15
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 27
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_16
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 27
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_17
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 30
+        width: 259
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_18
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 45
+        width: 147
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_19
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 44
+        width: 80
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_20
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 7
+        width: 62
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_21
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 9
+        width: 63
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_22
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 2
+        width: 434
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_23
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 27
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_24
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 27
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_25
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 27
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_26
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 6
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_27
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 6
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_28
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 6
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_29
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 6
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_30
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 6
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_31
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 6
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_32
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 6
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_33
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 6
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_34
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 9
+        width: 78
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 45
+        width: 94
+        height: 66
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_36
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 45
+        width: 94
+        height: 66
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_37
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_38
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 4
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_39
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 6
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_40
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 6
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_41
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 27
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_42
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 27
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_43
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 27
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_44
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 27
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_45
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 27
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_46
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 27
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: play_47
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 27
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
