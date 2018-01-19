@@ -35,7 +35,7 @@ public class ElementEvent : MonoBehaviour {
         if (Input.GetMouseButtonDown(0))
         {
             pos = Input.mousePosition;
-            Debug.Log(pos.x + " : " + pos.y);
+            //Debug.Log(pos.x + " : " + pos.y);
             if (pos.x > 300 && pos.x < 360 && pos.y > 0 && pos.y < 55)
             {
                 // 是否保护盾                
@@ -72,7 +72,7 @@ public class ElementEvent : MonoBehaviour {
             player = GameObject.FindGameObjectWithTag("Player");
             if (player != null)
             {
-                Herro herro = player.GetComponent<Herro>();
+                Hero herro = player.GetComponent<Hero>();
                 herro.SetSafeStatus(400);
                 GameManage.playerSafe--;
                 getPlayerCtl().SetSafeText();

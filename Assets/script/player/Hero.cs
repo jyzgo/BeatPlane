@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Herro : MonoBehaviour {
+public class Hero : MonoBehaviour {
 
     public int hp = 50;
     public GameObject explosion;

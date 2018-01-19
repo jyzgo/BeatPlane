@@ -39,7 +39,7 @@ public enum PlayerStyle
 
 public class GameManage : MonoBehaviour
 {
-    public static int gameLevel = 2; // 游戏关卡
+    public static int gameLevel = 5; // 游戏关卡
 
     public static GameStatus gameStatus = GameStatus.Home; // 游戏状态
 
@@ -62,7 +62,7 @@ public class GameManage : MonoBehaviour
 
     public static bool level_up_sound = false; // 是否播放升级音乐
 
-    public static float bgMoveSpeed = 0.5f; // 背景移动速度
+    public static float bgMoveSpeed = 1.6f; // 背景移动速度
     // 法术
     public static MagicType magic2 = MagicType.Magic3; // 大招编号
     public static MagicType currMagic = MagicType.Magic1;
