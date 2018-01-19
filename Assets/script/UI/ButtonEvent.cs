@@ -35,13 +35,11 @@ public class ButtonEvent : MonoBehaviour {
                 GameManage.gameLevel = 1;
                 break;
             case ButtonFlag.diffLevel:
-                //showTips("暂未开放，敬请期待");
                 Application.LoadLevel("Plane");
                 GameManage.gameStatus = GameStatus.Game;
                 GameManage.gameLevel = (int) (Random.value * 2) + 2;
                 break;
             case ButtonFlag.hardLevel:
-                //showTips("暂未开放，敬请期待");
                 Application.LoadLevel("Plane");
                 GameManage.gameStatus = GameStatus.Game;
                 GameManage.gameLevel = 4;
