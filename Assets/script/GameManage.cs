@@ -54,7 +54,7 @@ public class GameManage : MonoBehaviour
     public static int playerSafe = 2; // 玩家拥有的无敌护盾数量
     public static bool isSafeIng = false; // 是否开启无敌护盾中
 
-    public static int bulletNumber = 5; // 子弹编号
+    public static int bulletNumber = 1; // 子弹编号
     public static int bulletTempNumber = 1; // 子弹临时编号
     public static int bulletLevel = 4; // 子弹等级
     public static int bulletTempLevel = 1; // 子弹临时等级

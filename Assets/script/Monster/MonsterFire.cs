@@ -35,6 +35,7 @@ public class MonsterFire : MonoBehaviour
     {
         audio = GetComponent<AudioSource>();
     }
+    public Monster _monster;
 
     void FixedUpdate()
     {
@@ -71,7 +72,10 @@ public class MonsterFire : MonoBehaviour
             }
             bwave++;
         }    
-
+        if(_monster != null)
+        {
+            _monster.SetFireSpeed();
+        }
         switch (type)
         {
             case 1:

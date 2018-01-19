@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public enum MonsterType
 {
@@ -57,7 +58,15 @@ public class Monster : MonoBehaviour {
 
     private Bullet bulletScript;
 
+    public Transform monsterSp;
+
     private string mid = "";
+
+    public void SetFireSpeed()
+    {
+        _rotateSpeed = FIRE_SPEED;
+    }
+
     private string[] charArr = { 
         "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "m", "l", "n",
         "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "A", "B",
@@ -89,16 +98,33 @@ public class Monster : MonoBehaviour {
 	void Start () {        
         GameManage.monsterMap.Add(mid, this.gameObject);
         controller = FindObjectOfType<PlayerController>();
-        render = GetComponent<SpriteRenderer>();
+        render = GetComponentInChildren<SpriteRenderer>();
+        mfire = GetComponentInChildren<MonsterFire>();
+        mfire._monster = this;
         totalHp = hp;
         if (isboss)
         {
             hplineTransform = hpline.transform;
         }
 	}
-	
+    MonsterFire mfire;
+    Vector3 _rotate = new Vector3(0, 0, 10f);
+    const float NORMAL_SPEED = 1f;
+    const float FIRE_SPEED = 15f;
+    const float SLOWDOWN_SPEED = 0.2f;
+    float _rotateSpeed = NORMAL_SPEED;
 	// Update is called once per frame
 	void FixedUpdate () {
+        if (_rotateSpeed > NORMAL_SPEED)
+        {
+            _rotateSpeed -= SLOWDOWN_SPEED;
+        }else
+        {
+            _rotateSpeed = NORMAL_SPEED;
+        }
+
+
+        render.transform.Rotate(new Vector3(0,0,_rotateSpeed));
 
         if (colorAlpha > 0)
         {
@@ -174,8 +200,8 @@ public class Monster : MonoBehaviour {
         if (isboss)
         {
             boomPos = new Vector3(
-                transform.position.x + (Random.value * 2f) * 1,
-                transform.position.y + (Random.value * 0.2f) * 1,
+                transform.position.x + (UnityEngine.Random.value * 2f) * 1,
+                transform.position.y + (UnityEngine.Random.value * 0.2f) * 1,
                 transform.position.z
             );
             Instantiate(explosion, boomPos, transform.rotation);
@@ -416,8 +442,10 @@ public class Monster : MonoBehaviour {
         // 出现时 发射一颗子弹
         if (isAppear)
         {
-            MonsterFire mfire = GetComponentInChildren<MonsterFire>();
-            mfire.fire();          
+           // mfire = GetComponentInChildren<MonsterFire>();
+            mfire.fire();
+            Debug.Log("FIRE");
+            _rotateSpeed = FIRE_SPEED;    
         }
     }
 
@@ -433,9 +461,9 @@ public class Monster : MonoBehaviour {
             appearTimer++;
             if (appearTimer % 40 == 0) // 随机变换位置
             {
-                float x = Random.value * 1.7f;
-                float y = Random.value * 3f;
-                int a = (int)(Random.value * 10);
+                float x = UnityEngine.Random.value * 1.7f;
+                float y = UnityEngine.Random.value * 3f;
+                int a = (int)(UnityEngine.Random.value * 10);
                 if(a > 5){
                     x = -x;
                 }
@@ -443,8 +471,10 @@ public class Monster : MonoBehaviour {
             }
             else if (appearTimer % 41 == 0) // 发射子弹
             {
-                MonsterFire mfire = GetComponentInChildren<MonsterFire>();
+               // mfire = GetComponentInChildren<MonsterFire>();
                 mfire.fire();
+
+                _rotateSpeed = FIRE_SPEED;
             }
         }
     }
@@ -570,12 +600,12 @@ public class Monster : MonoBehaviour {
 
         if (rewards != null && rewards.Length > 0)
         {
-            int f = (int)(Random.value * 10);
+            int f = (int)(UnityEngine.Random.value * 10);
             if (f % 5 == 0)
             {
                 if (rewardIndex == -1)
                 {
-                    f = (int)(Random.value * rewards.Length);
+                    f = (int)(UnityEngine.Random.value * rewards.Length);
                     Instantiate(rewards[f], transform.position, transform.rotation);
                 }
                 else
