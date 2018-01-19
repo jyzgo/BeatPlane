@@ -39,7 +39,7 @@ public enum PlayerStyle
 
 public class GameManage : MonoBehaviour
 {
-    public static int gameLevel = 5; // 游戏关卡
+    public static int gameLevel = 8; // 游戏关卡
 
     public static GameStatus gameStatus = GameStatus.Home; // 游戏状态
 
