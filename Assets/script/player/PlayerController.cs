@@ -5,7 +5,7 @@ using System;
 
 public class PlayerController : MonoBehaviour {
 
-    public GameObject player;
+    public GameObject playerPrefab;
     public GameObject playerObject;
     private Vector3 playerPos;
     public GameObject[] scoreText;
@@ -21,9 +21,10 @@ public class PlayerController : MonoBehaviour {
     public float moveSpeed = 1f;
     private OutMagic outMagic;
 
+    public static PlayerController current;
 	// Use this for initialization
 	void Start () {
-
+        current = this;
         outMagic = GameObject.FindObjectOfType<OutMagic>();
 
         CreatePlayer();
@@ -33,7 +34,7 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        playerObject = GameObject.FindGameObjectWithTag("Player");
+        //playerObject = GameObject.FindGameObjectWithTag("Player");
         if (playerObject == null)
         {// 死亡
             CreatePlayer();
@@ -125,8 +126,9 @@ public class PlayerController : MonoBehaviour {
     {
         if(GameManage.playerLife > 0){
             GameManage.playerLife--;
-            setLifeText();
-            Instantiate(player, transform.position, transform.rotation);
+            SetLifeText();
+            playerObject = Instantiate(playerPrefab, transform.position, transform.rotation);
+            playerObject.SetActive(true);
             GameManage.playerHp = 5;
             setHpSprite();
         }
@@ -143,7 +145,7 @@ public class PlayerController : MonoBehaviour {
         if (isLevelUp())
         {
             GameManage.playerLife = GameManage.playerLife + 1;
-            setLifeText();
+            SetLifeText();
             AudioSource audio = GetComponent<AudioSource>();
             if(audio != null){
                 audio.Play();
@@ -168,7 +170,7 @@ public class PlayerController : MonoBehaviour {
         return false;
     }
 
-    public void setLifeText()
+    public void SetLifeText()
     {
         int num1 = (int) (GameManage.playerLife / 10);
         NumberObj num = lifeText[0].GetComponent<NumberObj>();

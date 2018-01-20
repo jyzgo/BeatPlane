@@ -129,19 +129,19 @@ public class Reward : MonoBehaviour {
                     controller.setHpSprite();
                     break;
                 case RewardType.BulletNum1:
-                    GameManage.changeBulletNumber(1);
+                    GameManage.ChangeBulletNumber(1);
                     break;
                 case RewardType.BulletNum2:
-                    GameManage.changeBulletNumber(2);
+                    GameManage.ChangeBulletNumber(2);
                     break;
                 case RewardType.BulletNum3:
-                    GameManage.changeBulletNumber(3);
+                    GameManage.ChangeBulletNumber(3);
                     break;
                 case RewardType.BulletNum4:
-                    GameManage.changeBulletNumber(4);
+                    GameManage.ChangeBulletNumber(4);
                     break;
                 case RewardType.BulletNum5:
-                    GameManage.changeBulletNumber(5);
+                    GameManage.ChangeBulletNumber(5);
                     break;
                 case RewardType.Magic1:
                     getMagic(MagicType.Magic1);
@@ -189,7 +189,7 @@ public class Reward : MonoBehaviour {
 
     void getMagic(MagicType type)
     {
-        GameManage.changeMagicNumber(type);
+        GameManage.ChangeMagicNumber(type);
         controller.setMagicText();
     }
 

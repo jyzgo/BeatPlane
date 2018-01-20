@@ -106,18 +106,18 @@ public class GameManage : MonoBehaviour
         }
     }
 
-    void OnGUI()
-    {
-        GUI.Label(new Rect(0, 100, 200, 200), "FPS:" + f_Fps.ToString("f2"));
-    }
+    //void OnGUI()
+    //{
+    //    GUI.Label(new Rect(0, 100, 200, 200), "FPS:" + f_Fps.ToString("f2"));
+    //}
 
-    public static void initPlayerBulletNumber()
+    public static void InitPlayerBulletNumber()
     {
         bulletLevel = 1;
         bulletNumber = 1;
     }
 
-    public static void changeBulletNumber(int num){
+    public static void ChangeBulletNumber(int num){
         if(bulletNumber == num){
             if(bulletLevel < 5){
                 bulletLevel++;
@@ -126,7 +126,7 @@ public class GameManage : MonoBehaviour
         bulletNumber = num;
     }
 
-    public static void changeMagicNumber(MagicType type)
+    public static void ChangeMagicNumber(MagicType type)
     {
         if (magic2 == type)
         {            

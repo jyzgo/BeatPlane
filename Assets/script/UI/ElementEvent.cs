@@ -10,18 +10,18 @@ public class ElementEvent : MonoBehaviour {
     private Vector3 pos;
     private OutMagic outMagic = null;
     private GameObject player = null;
-    private PlayerController controller;
+    //private PlayerController controller;
 
-    PlayerController getPlayerCtl(){
-        if (controller == null)
-        {
-            controller = FindObjectOfType<PlayerController>();
-        }
-        return controller;
-    }
+    //PlayerController GetPlayerController(){
+    //    if (controller == null)
+    //    {
+    //        controller = FindObjectOfType<PlayerController>();
+    //    }
+    //    return controller;
+    //}
     
 
-    OutMagic getMagic()
+    OutMagic GetMagic()
     {
         if (outMagic == null)
         {
@@ -31,59 +31,60 @@ public class ElementEvent : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void FixedUpdate () {
-        if (Input.GetMouseButtonDown(0))
-        {
-            pos = Input.mousePosition;
-            //Debug.Log(pos.x + " : " + pos.y);
-            if (pos.x > 300 && pos.x < 360 && pos.y > 0 && pos.y < 55)
-            {
-                // 是否保护盾                
-                BtnSafe.GetComponent<SpriteRenderer>().color = new Color(1.0f, 1.0f, 1.0f, 0.5f);
-            }
-            else if (pos.x > 0 && pos.x < 55 && pos.y > 0 && pos.y < 55)
-            {
-                // 是否必杀技
-                BtnMagic.GetComponent<SpriteRenderer>().color = new Color(1.0f, 1.0f, 1.0f, 0.5f);
-            }
-        } else if(Input.GetMouseButtonUp(0)){
-            BtnSafe.GetComponent<SpriteRenderer>().color = new Color(1.0f, 1.0f, 1.0f, 1f);
-            BtnMagic.GetComponent<SpriteRenderer>().color = new Color(1.0f, 1.0f, 1.0f, 1f);
-            pos = Input.mousePosition;
-            Debug.Log(pos.x + " : " + pos.y);
-            if (pos.x > 300 && pos.x < 360 && pos.y > 0 && pos.y < 55)
-            {
-                // 是否保护盾                
-                IssueSafe();
-            }
-            else if (pos.x > 0 && pos.x < 55 && pos.y > 0 && pos.y < 55)
-            {
-                // 是否必杀技                
-                IssueMagic();
-            }
-        }
-	}
+	//void FixedUpdate () {
+ //       if (Input.GetMouseButtonDown(0))
+ //       {
+ //           pos = Input.mousePosition;
+ //           //Debug.Log(pos.x + " : " + pos.y);
+ //           if (pos.x > 300 && pos.x < 360 && pos.y > 0 && pos.y < 55)
+ //           {
+ //               // 是否保护盾                
+ //               BtnSafe.GetComponent<SpriteRenderer>().color = new Color(1.0f, 1.0f, 1.0f, 0.5f);
+ //           }
+ //           else if (pos.x > 0 && pos.x < 55 && pos.y > 0 && pos.y < 55)
+ //           {
+ //               // 是否必杀技
+ //               BtnMagic.GetComponent<SpriteRenderer>().color = new Color(1.0f, 1.0f, 1.0f, 0.5f);
+ //           }
+ //       } else if(Input.GetMouseButtonUp(0)){
+ //           BtnSafe.GetComponent<SpriteRenderer>().color = new Color(1.0f, 1.0f, 1.0f, 1f);
+ //           BtnMagic.GetComponent<SpriteRenderer>().color = new Color(1.0f, 1.0f, 1.0f, 1f);
+ //           pos = Input.mousePosition;
+ //           Debug.Log(pos.x + " : " + pos.y);
+ //           if (pos.x > 300 && pos.x < 360 && pos.y > 0 && pos.y < 55)
+ //           {
+ //               // 是否保护盾                
+ //               IssueSafe();
+ //           }
+ //           else if (pos.x > 0 && pos.x < 55 && pos.y > 0 && pos.y < 55)
+ //           {
+ //               // 是否必杀技                
+ //               IssueMagic();
+ //           }
+ //       }
+	//}
 
-    void IssueSafe()
+    public void IssueSafe()
     {
 
         if (!GameManage.isSafeIng && GameManage.playerSafe > 0)
         {
-            player = GameObject.FindGameObjectWithTag("Player");
+            //   player = GameObject.FindGameObjectWithTag("Player");
+            player = PlayerController.current.playerObject;
             if (player != null)
             {
                 Hero herro = player.GetComponent<Hero>();
                 herro.SetSafeStatus(400);
                 GameManage.playerSafe--;
-                getPlayerCtl().SetSafeText();
+                PlayerController.current.SetSafeText();
                 herro = null;
             }
         }        
     }
 
-    void IssueMagic()
+   public void IssueMagic()
     {
-        getMagic().IssueMagic();
+        GetMagic().IssueMagic();
     }
 
 }

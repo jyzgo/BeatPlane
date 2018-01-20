@@ -82,7 +82,7 @@ public class Hero : MonoBehaviour {
         
     }
 
-    private void Boom()
+    private void PlaneDie()
     {
         Instantiate(explosion, transform.position, transform.rotation);
 
@@ -121,7 +121,7 @@ public class Hero : MonoBehaviour {
         GameManage.isSafeIng = true;
     }
 
-    public void injured()
+    public void Injured()
     {
         if (isSafe || isSafeStatus)
         {
@@ -134,9 +134,9 @@ public class Hero : MonoBehaviour {
         if (hp <= 0 && !isdeed)
         {
             isdeed = true;
-            Boom();
+            PlaneDie();
             Destroy(this.gameObject);
-            GameManage.initPlayerBulletNumber();
+            GameManage.InitPlayerBulletNumber();
         }
         else
         {
@@ -152,23 +152,23 @@ public class Hero : MonoBehaviour {
         }
         if (other.tag == "boss")
         {
-            injured();
+            Injured();
         }
 
         if (other.tag == "monster")
         {
-            injured();
+            Injured();
         }
 
         if (other.tag == "bullet-monster")
         {
-            injured();
+            Injured();
             Destroy(other.gameObject);
         }
 
         if (other.tag == "bullet-boss")
         {
-            injured();
+            Injured();
             Destroy(other.gameObject);
         }
     }
