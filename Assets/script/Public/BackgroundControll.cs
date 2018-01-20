@@ -8,24 +8,13 @@ public class BackgroundControll : MonoBehaviour
     
     public GameObject[] background;
     public static Background currBackScript = null;
+    public static BackgroundControll current;
     private Background backScript;
 
 	// Use this for initialization
 	void Start () {
+        current = this;
         audio = GetComponent<AudioSource>();
-	}
-	
-	// Update is called once per frame
-	void FixedUpdate () {
-        //if (GameManage.level_up_sound)
-        //{
-        //    audio.Stop();
-        //}
-        //else if(!audio.isPlaying)
-        //{
-        //    audio.Play();
-        //}
-
         backScript = getActiveBackground();
         if (null != backScript)
         {
@@ -40,6 +29,20 @@ public class BackgroundControll : MonoBehaviour
                 currBackScript = backScript;
             }            
         }
+	}
+	
+	// Update is called once per frame
+	void FixedUpdate () {
+        //if (GameManage.level_up_sound)
+        //{
+        //    audio.Stop();
+        //}
+        //else if(!audio.isPlaying)
+        //{
+        //    audio.Play();
+        //}
+
+
 
 	}
 

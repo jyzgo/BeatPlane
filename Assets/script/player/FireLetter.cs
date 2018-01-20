@@ -30,7 +30,7 @@ public class FireLetter : MonoBehaviour {
         {
             bnum = GameManage.bulletNumber;
             blevel = GameManage.bulletLevel;
-            if (GameManage.isOutMagic)
+            if (GameManage.isMagicCasting)
             {
                 bnum = GameManage.bulletTempNumber;
                 blevel = GameManage.bulletTempLevel;

@@ -5,7 +5,7 @@ public class ElementEvent : MonoBehaviour {
 
     public GameObject BtnMagic;
     public GameObject BtnSafe;
-
+    public static ElementEvent current;
 
     private Vector3 pos;
     private OutMagic outMagic = null;
@@ -19,7 +19,11 @@ public class ElementEvent : MonoBehaviour {
     //    }
     //    return controller;
     //}
-    
+
+    private void Start()
+    {
+        current = this;
+    }
 
     OutMagic GetMagic()
     {

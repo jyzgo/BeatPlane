@@ -231,7 +231,7 @@ public class Bullet : MonoBehaviour {
         }
         else
         {
-            targetMonster = Utils.getTargetMonster(transform.position);
+            targetMonster = Utils.GetTargetMonster(transform.position);
             if (targetMonster != null)
             {
                 transform.position = Vector3.Lerp(

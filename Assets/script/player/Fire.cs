@@ -32,7 +32,7 @@ public class Fire : MonoBehaviour {
         {
             bnum = GameManage.bulletNumber;
             blevel = GameManage.bulletLevel;
-            if (GameManage.isOutMagic)
+            if (GameManage.isMagicCasting)
             {
                 bnum = GameManage.bulletTempNumber;
                 blevel = GameManage.bulletTempLevel;
@@ -62,6 +62,9 @@ public class Fire : MonoBehaviour {
 
     public void fire()
     {
+
+     //   bulletNumber = GameManage.bulletNumber;
+        
         if (isshot)
         {
             GameObject go = GameObject.Instantiate(bullet, transform.position, Quaternion.identity) as GameObject;

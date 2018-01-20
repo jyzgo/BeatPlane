@@ -144,19 +144,19 @@ public class Reward : MonoBehaviour {
                     GameManage.ChangeBulletNumber(5);
                     break;
                 case RewardType.Magic1:
-                    getMagic(MagicType.Magic1);
+                    GetMagic(MagicType.Magic1);
                     break;
                 case RewardType.Magic2:
-                    getMagic(MagicType.Magic2);
+                    GetMagic(MagicType.Magic2);
                     break;
                 case RewardType.Magic3:
-                    getMagic(MagicType.Magic3);
+                    GetMagic(MagicType.Magic3);
                     break;
                 case RewardType.Magic4:
-                    getMagic(MagicType.Magic4);
+                    GetMagic(MagicType.Magic4);
                     break;
                 case RewardType.Magic5:
-                    getMagic(MagicType.Magic5);
+                    GetMagic(MagicType.Magic5);
                     break;
                 case RewardType.AddBulletLevel:
                     setBulletLevel();
@@ -187,7 +187,7 @@ public class Reward : MonoBehaviour {
         Destroy(this.gameObject);
     }
 
-    void getMagic(MagicType type)
+    void GetMagic(MagicType type)
     {
         GameManage.ChangeMagicNumber(type);
         controller.setMagicText();
@@ -214,6 +214,7 @@ public class Reward : MonoBehaviour {
     void SetPlayerSafe(GameObject player)
     {
         GameManage.playerSafe++;
+        ElementEvent.current.IssueSafe();
         controller.SetSafeText();
     }
 }

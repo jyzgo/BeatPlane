@@ -29,9 +29,9 @@ public class OutMagic : MonoBehaviour {
     // 释放魔法
     public void IssueMagic()
     {
-        if (GameManage.magicCount > 0)
+        //if (GameManage.magicCount > 0)
         {
-            if (!GameManage.isOutMagic)
+            if (!GameManage.isMagicCasting)
             {
                 GameManage.magicCount -= GameManage.magicLevel2;
                 if (GameManage.magicCount < 0)
@@ -44,7 +44,7 @@ public class OutMagic : MonoBehaviour {
                     GameManage.magicLevel2 = 1;
                 }
 
-                GameManage.isOutMagic = true;
+                GameManage.isMagicCasting = true;
                 GameManage.currMagic = GameManage.magic2;
                 GameManage.currMagicLevel = GameManage.magicLevel2;
                 magicTimer = 0;
@@ -61,7 +61,7 @@ public class OutMagic : MonoBehaviour {
         if (magicElement == null) {
             return;
         }
-	    if(GameManage.isOutMagic) {
+	    if(GameManage.isMagicCasting) {
             switch (GameManage.currMagic)
             {
                 case MagicType.Magic1:
@@ -223,7 +223,7 @@ public class OutMagic : MonoBehaviour {
 
     void createMagic4()
     {
-        GameObject monster = Utils.getTargetMonster(transform.position);
+        GameObject monster = Utils.GetTargetMonster(transform.position);
         if (monster != null)
         {
             Instantiate(magicElement, new Vector3(0, -2, 0), Quaternion.identity);
@@ -269,7 +269,7 @@ public class OutMagic : MonoBehaviour {
 
     public void endMagic()
     {
-        GameManage.isOutMagic = false;
+        GameManage.isMagicCasting = false;
         GameManage.isMagicIng = false;
         magicTimer = 0;
         magic3Count = 0;

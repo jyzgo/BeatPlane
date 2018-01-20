@@ -47,7 +47,7 @@ public class GameManage : MonoBehaviour
 
     public static PlayerStyle playerStyle = PlayerStyle.PlayerOne; // 玩家战机模型
 
-    public static int playerLife = 10; // 玩家生命
+    public static int playerLife = 3; // 玩家生命
 
     public static int gemNum = 1000; // 宝石数量
 
@@ -56,7 +56,7 @@ public class GameManage : MonoBehaviour
 
     public static int bulletNumber = 1; // 子弹编号
     public static int bulletTempNumber = 1; // 子弹临时编号
-    public static int bulletLevel = 4; // 子弹等级
+    public static int bulletLevel = 1; // 子弹等级
     public static int bulletTempLevel = 1; // 子弹临时等级
     public static int playerHp = 5; // 玩家血量
 
@@ -69,12 +69,15 @@ public class GameManage : MonoBehaviour
     public static int magicCount = 10; // 大招数量
     public static int magicLevel2 = 1; // 大招等级
     public static int currMagicLevel = 1; // 当前释放的大招等级
-    public static bool isOutMagic = false; // 是否释放大招
+    public static bool isMagicCasting = false; // 是否释放大招
     public static bool isMagicIng = false;  // 是否正在释放大招
     public static int[] magicTimeArray = { 400, 400, 500, 400, 400 }; // 每个大招的释放时长
 
     public static bool isOutBoss = false; // 是否boss出现
     public static int bossHead = 1; // boss头颅，默认一个
+
+    public int TestBulletLevel = 1;
+    public int TestBulletNumber = 1;
 
     // 敌机数组
     public static Hashtable monsterMap = new Hashtable();
@@ -97,6 +100,8 @@ public class GameManage : MonoBehaviour
 
     void FixedUpdate()
     {
+     //   bulletLevel = TestBulletLevel;
+        //bulletNumber = TestBulletNumber;
         ++i_Frames;
         if (Time.realtimeSinceStartup > f_LastInterval + f_UpdateInterval)
         {
@@ -140,6 +145,7 @@ public class GameManage : MonoBehaviour
         }
         magicCount++;
         magic2 = type;
+        ElementEvent.current.IssueMagic();
     }
 
 }

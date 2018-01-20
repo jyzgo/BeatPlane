@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Utils {
 
-    public static GameObject getTargetMonster(Vector3 pos)
+    public static GameObject GetTargetMonster(Vector3 pos)
     {
         GameObject monster = null;
         ArrayList monsterList = new ArrayList();
