@@ -17,14 +17,14 @@ public class BackgroundControll : MonoBehaviour
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-        if (GameManage.level_up_sound)
-        {
-            audio.Stop();
-        }
-        else if(!audio.isPlaying)
-        {
-            audio.Play();
-        }
+        //if (GameManage.level_up_sound)
+        //{
+        //    audio.Stop();
+        //}
+        //else if(!audio.isPlaying)
+        //{
+        //    audio.Play();
+        //}
 
         backScript = getActiveBackground();
         if (null != backScript)
