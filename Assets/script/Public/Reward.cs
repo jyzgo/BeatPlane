@@ -24,7 +24,7 @@ public class Reward : MonoBehaviour {
 
     public RewardType type = RewardType.BulletNum1;
 
-    public GameObject tipobj; // 提示效果
+   // public GameObject tipobj; // 提示效果
 
     private PlayerController controller;
 
@@ -180,10 +180,10 @@ public class Reward : MonoBehaviour {
 
     void DestoryMy()
     {
-        if (tipobj != null)
-        {
-            Instantiate(tipobj, transform.position, Quaternion.identity);
-        }        
+        //if (tipobj != null)
+        //{
+        //    Instantiate(tipobj, transform.position, Quaternion.identity);
+        //}        
         Destroy(this.gameObject);
     }
 
