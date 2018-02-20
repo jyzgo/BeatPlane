@@ -14,7 +14,7 @@ public class EditPrefab
             "Add monster hp",
             "confirm"))
         {
-            string genPath = Application.dataPath + "/Prefabs/Monster";
+            string genPath = Application.dataPath + "/Prefabs/Test";
             string[] filesPath = Directory.GetFiles(genPath, "*.prefab", SearchOption.AllDirectories);
 
             for (int i = 0; i < filesPath.Length; i++)
@@ -22,8 +22,11 @@ public class EditPrefab
                 Debug.Log("file " + filesPath[i]);
                 filesPath[i] = filesPath[i].Substring(filesPath[i].IndexOf("Assets"));
 
-              //  GameObject _prefab = AssetDatabase.LoadAssetAtPath(filesPath[i], typeof(GameObject)) as GameObject;
-                //GameObject prefabGameobject = PrefabUtility.InstantiatePrefab(_prefab) as GameObject;
+                GameObject _prefab = AssetDatabase.LoadAssetAtPath(filesPath[i], typeof(GameObject)) as GameObject;
+                GameObject c = new GameObject();
+                c.AddComponent<Canvas>();
+                GameObject prefabGameobject = PrefabUtility.InstantiatePrefab(_prefab) as GameObject;
+                c.transform.parent = prefabGameobject.transform;
                 //LeaderAction la = prefabGameobject.GetComponent<LeaderAction>();
 
 
