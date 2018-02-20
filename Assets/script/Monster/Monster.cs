@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
+using UnityEngine.UI;
 
 public enum MonsterType
 {
@@ -79,6 +80,7 @@ public class Monster : MonoBehaviour {
     Vector3 _offsetColor;
     void UpdateColor()
     {
+        hpText.text = hp.ToString();
         if (hp > LV_ARR[0])
         {
 
@@ -98,6 +100,7 @@ public class Monster : MonoBehaviour {
 
     public float hp = 100;
     private float totalHp = 100;
+    public Text hpText;
 
     public float left = 0f;
     public float right = 0f;

@@ -1,49 +1,1 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.IO;
-using UnityEditor;
-using UnityEngine;
-
-[ExecuteInEditMode]
-public class EditPrefab
-{
-    [MenuItem("Tools/AddUI")]
-    private static void AddHitData()
-    {
-        if (EditorUtility.DisplayDialog("Confirm",
-            "Add monster hp",
-            "confirm"))
-        {
-            string genPath = Application.dataPath + "/Prefabs/Test";
-            string[] filesPath = Directory.GetFiles(genPath, "*.prefab", SearchOption.AllDirectories);
-
-            for (int i = 0; i < filesPath.Length; i++)
-            {
-                Debug.Log("file " + filesPath[i]);
-                filesPath[i] = filesPath[i].Substring(filesPath[i].IndexOf("Assets"));
-
-                GameObject _prefab = AssetDatabase.LoadAssetAtPath(filesPath[i], typeof(GameObject)) as GameObject;
-                GameObject c = new GameObject();
-                c.AddComponent<Canvas>();
-                GameObject prefabGameobject = PrefabUtility.InstantiatePrefab(_prefab) as GameObject;
-                c.transform.parent = prefabGameobject.transform;
-                //LeaderAction la = prefabGameobject.GetComponent<LeaderAction>();
-
-
-                //if (la != null)
-                //{
-                //    if (la.HIT_DATA != null) continue;
-                //    if (prefabGameobject.transform.FindChild("ANIMATION_DATA/HIT") == null) continue;
-                //    la.HIT_DATA = prefabGameobject.transform.FindChild("ANIMATION_DATA/HIT").GetComponent<AnimationData>();
-                //    PrefabUtility.ReplacePrefab(prefabGameobject, _prefab, ReplacePrefabOptions.Default);
-                //    MonoBehaviour.DestroyImmediate(prefabGameobject);
-                //}
-                //else
-                //    continue;
-
-            }
-            AssetDatabase.SaveAssets();
-            EditorUtility.DisplayDialog("success", "Add finish！", "Confirm");
-        }
-    }
-}
+﻿using System.Collections;using System.Collections.Generic;using System.IO;using UnityEditor;using UnityEngine;using UnityEngine.UI;[ExecuteInEditMode]public class EditPrefab{    [MenuItem("Tools/ChangeMonsterFontColor")]    private static void ChangeMonsterFontColor()    {        string genPath = Application.dataPath + "/Prefabs/Monster";        string[] filesPath = Directory.GetFiles(genPath, "*.prefab", SearchOption.AllDirectories);        var ttt = GameObject.FindGameObjectWithTag("ttt");        var text = ttt.GetComponent<Text>();        var toFont = text.font;        for (int i = 0; i < filesPath.Length; i++)        {            filesPath[i] = filesPath[i].Substring(filesPath[i].IndexOf("Assets"));            GameObject _prefab = AssetDatabase.LoadAssetAtPath(filesPath[i], typeof(GameObject)) as GameObject;            GameObject prefabGameobject = PrefabUtility.InstantiatePrefab(_prefab) as GameObject;            var t = prefabGameobject.GetComponentInChildren<Text>();            t.color = Color.black;            t.font = toFont;            PrefabUtility.ReplacePrefab(prefabGameobject, _prefab, ReplacePrefabOptions.Default);            MonoBehaviour.DestroyImmediate(prefabGameobject);        }        AssetDatabase.SaveAssets();        EditorUtility.DisplayDialog("success", "Add finish！", "Confirm");    }    [MenuItem("Tools/AddUI")]    private static void AddUI()    {        string genPath = Application.dataPath + "/Prefabs/Monster";        string[] filesPath = Directory.GetFiles(genPath, "*.prefab", SearchOption.AllDirectories);        for (int i = 0; i < filesPath.Length; i++)        {            filesPath[i] = filesPath[i].Substring(filesPath[i].IndexOf("Assets"));            GameObject _prefab = AssetDatabase.LoadAssetAtPath(filesPath[i], typeof(GameObject)) as GameObject;            GameObject c = new GameObject("HP");            var canvas = c.AddComponent<Canvas>();            canvas.sortingLayerName = "ui";            GameObject hpText = new GameObject("hpText");            var t = hpText.AddComponent<Text>();            t.text = "900";            t.fontSize = 30;            t.alignment = TextAnchor.MiddleCenter;            hpText.transform.parent = c.transform;            GameObject prefabGameobject = PrefabUtility.InstantiatePrefab(_prefab) as GameObject;            c.transform.parent = prefabGameobject.transform;            c.transform.localScale = new Vector3(0.01f, 0.01f, 1f);            c.transform.localPosition = Vector3.zero;            var m = prefabGameobject.GetComponent<Monster>();            m.hpText = t;            PrefabUtility.ReplacePrefab(prefabGameobject, _prefab, ReplacePrefabOptions.Default);            MonoBehaviour.DestroyImmediate(prefabGameobject);        }        AssetDatabase.SaveAssets();        EditorUtility.DisplayDialog("success", "Add finish！", "Confirm");    }}
