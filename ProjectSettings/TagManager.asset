@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - monster
+  - bullet
+  - reward
+  - boss
+  - explosion
+  - bullet-player
+  - bullet-monster
+  - bullet-boss
+  - scoreText
+  - levelText
+  - bullet-enemy
+  - LifeText
+  - magic
+  - magicText
+  - fiveBulletBoom
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - player
+  - monster
+  - bullet-player
+  - bullet-monster
+  - boss
+  - bullet-boss
+  - reward
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: background
+    uniqueID: 2511492201
+    locked: 0
+  - name: explosion
+    uniqueID: 1059059197
+    locked: 0
+  - name: character
+    uniqueID: 3875329467
+    locked: 0
+  - name: bullet
+    uniqueID: 1966163447
+    locked: 0
+  - name: magic
+    uniqueID: 3171388805
+    locked: 0
+  - name: foreground
+    uniqueID: 1819541417
+    locked: 0
+  - name: ui
+    uniqueID: 2500408881
+    locked: 0
